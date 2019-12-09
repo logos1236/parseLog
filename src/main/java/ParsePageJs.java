@@ -50,7 +50,7 @@ public class ParsePageJs extends Parse {
 
                     if (i == 5) {
                         while (!ModelDatabase.isNewTreadAvailable()) {
-                            Thread.currentThread().sleep(10);
+                            Thread.yield();
                         }
 
                         ModelDatabase.bunchQuery(sql_query, params);
