@@ -1,1 +1,3 @@
 target/*
+src/logs/*
+src/main/resources/db.properties
